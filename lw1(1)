@@ -1,0 +1,23 @@
+#include <iostream>
+#include <string>
+
+int main() {
+    std::string str;
+
+    // Запрос строки у пользователя
+    std::cout << "Введите строку: ";
+    std::getline(std::cin, str);
+
+    // Проверка на пустую строку
+    if (!str.empty()) {
+        // Вывод первого символа
+        std::cout << "Первый элемент: " << str[0] << std::endl;
+
+        // Вывод последнего символа
+        std::cout << "Последний элемент: " << str[str.length() - 1] << std::endl;
+    } else {
+        std::cout << "Строка пуста." << std::endl;
+    }
+
+    return 0;
+}
