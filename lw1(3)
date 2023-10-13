@@ -1,0 +1,28 @@
+#include <iostream>
+#include <string>
+
+int main() {
+    std::string str1, str2;
+
+    // Запрос первой строки у пользователя
+    std::cout << "Введите первую строку: ";
+    std::getline(std::cin, str1);
+
+    // Запрос второй строки у пользователя
+    std::cout << "Введите вторую строку: ";
+    std::getline(std::cin, str2);
+
+    // Сравнение строк
+    int comparison_result = str1.compare(str2);
+
+    // Вывод результата сравнения
+    if (comparison_result < 0) {
+        std::cout << "Первая строка меньше второй." << std::endl;
+    } else if (comparison_result > 0) {
+        std::cout << "Вторая строка меньше первой." << std::endl;
+    } else {
+        std::cout << "Строки равны." << std::endl;
+    }
+
+    return 0;
+}
