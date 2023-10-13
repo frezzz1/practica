@@ -18,9 +18,11 @@ int main() {
     // Вывод результата сравнения
     if (comparison_result < 0) {
         std::cout << "Первая строка меньше второй." << std::endl;
-    } else if (comparison_result > 0) {
+    }
+    else if (comparison_result > 0) {
         std::cout << "Вторая строка меньше первой." << std::endl;
-    } else {
+    } 
+    else {
         std::cout << "Строки равны." << std::endl;
     }
 
