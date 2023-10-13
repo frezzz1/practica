@@ -11,10 +11,10 @@ int main() {
     // Проверка на пустую строку
     if (!str.empty()) {
         // Вывод первого символа
-        std::cout << "Первый элемент: " << str[0] << std::endl;
+        std::cout << "Первый элемент: " << str.front() << std::endl;
 
         // Вывод последнего символа
-        std::cout << "Последний элемент: " << str[str.length() - 1] << std::endl;
+        std::cout << "Последний элемент: " << str.back() << std::endl;
     } else {
         std::cout << "Строка пуста." << std::endl;
     }
